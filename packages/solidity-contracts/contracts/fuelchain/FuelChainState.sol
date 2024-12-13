@@ -22,7 +22,7 @@ contract FuelChainState is Initializable, PausableUpgradeable, AccessControlUpgr
     // Constants //
     ///////////////
 
-    /// @dev The commit proccess parameters
+    /// @dev The commit process parameters
     // NUM_COMMIT_SLOTS an arbitrary number of commits to store before starting to overwrite
     uint256 public constant NUM_COMMIT_SLOTS = 240;
     // Number of blocks per commit interval
