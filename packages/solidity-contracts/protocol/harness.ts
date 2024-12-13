@@ -96,7 +96,7 @@ export async function getContractAddresses(
 export async function setupFuel(): Promise<HarnessObject> {
   // Get signers
   // Use a different deployer to ensure all contracts can be deployed
-  // and upagrade by an different account.
+  // and upgrade by an different account.
   const signers = (await ethers.getSigners()).slice(1);
   const deployer = signers[0];
   const signer = signers[0].address;
