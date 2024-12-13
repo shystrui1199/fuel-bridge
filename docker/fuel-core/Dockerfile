@@ -11,7 +11,7 @@ ARG CONSENSUS_KEY_SECRET=""
 
 # dependencies
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt update && apt install -y git curl jq && rm -rf /var/lib/apt/lists/*
+RUN apt update && apt install -y curl git jq && rm -rf /var/lib/apt/lists/*
 
 # copy chain config
 WORKDIR /fuel
