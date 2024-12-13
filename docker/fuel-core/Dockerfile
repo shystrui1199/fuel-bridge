@@ -23,7 +23,8 @@ RUN git clone \
     /chain-configuration
 
 # Anchor the chain configuration to a specific commit to avoid CI breaking
-RUN cd /chain-configuration && git checkout 8e4f7b52d7112f929a7cd95b988dfebfd10e87ec
+WORKDIR /chain-configuration
+RUN git checkout 8e4f75bd211f2957ad79cdb59b88dfedfb10e87c
 
 # Copy the base local configuration
 RUN cp -R /chain-configuration/local/* ./
